@@ -1,0 +1,28 @@
+.header {
+  background: #355d81;
+  padding: 0;
+}
+
+.header__actions {
+  display: flex;
+  margin-left: auto;
+  a {
+    padding: $m-size;
+  }
+}
+
+.header__actions__item {
+  background: none;
+  color: #fff;
+}
+
+.header__content {
+  align-items: center;
+  display: flex;
+  padding: 0;
+}
+
+.header__title {
+  color: #fff;
+  text-decoration: none;
+}
