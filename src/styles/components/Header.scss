@@ -1,0 +1,18 @@
+.header {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($light-green, 0.8),
+    rgba($dark-green, 0.8)
+  ),
+    url('/images/hero.jpg');
+  background-position: top; // As we resize, the top part of the image sticks at the position
+  background-size: cover; // Try to fit whatever the viewport size is
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 75vh,
+    0% 100%
+  ); // Clockwise from top-left, x y
+
+  height: 95vh;
+}
