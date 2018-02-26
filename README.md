@@ -1,6 +1,6 @@
 # Boilerplate
 
-## 🏕 React % CSS.
+## 🏕 React & CSS.
 
 **Installation:**
 
