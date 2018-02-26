@@ -15,4 +15,34 @@
   ); // Clockwise from top-left, x y
 
   height: 95vh;
+  position: relative;
+}
+
+.header__logo-box {
+  left: 40px;
+  position: absolute; // Parent's (header) position relative,
+  top: 40px;
+}
+
+.header__logo {
+  height: 35px;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-primary__main {
+  display: block; // block elements each occupy all the available width create line breaks after and before them
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+}
+
+.heading-primary__sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17px;
 }
