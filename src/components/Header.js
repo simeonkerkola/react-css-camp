@@ -15,7 +15,7 @@ export const Header = () => (
             <span className="heading-primary__sub">is where life happens</span>
           </h1>
           <Link className="header__title" to="/">
-            <button className="btn btn-white">Discover our tours</button>
+            <button className="btn btn--white btn--animated">Discover our tours</button>
           </Link>
         </div>
       </div>

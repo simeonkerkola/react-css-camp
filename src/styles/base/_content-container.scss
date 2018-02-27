@@ -1,6 +1,7 @@
 .content-container--center {
   left: 50%; // START counting at the 50% of the PARENT element
   position: absolute;
+  text-align: center;
   top: 40%; // Not at the center as itself
   transform: translate(-50%, -50%); // x y in relation of the element ITSELF
 }
