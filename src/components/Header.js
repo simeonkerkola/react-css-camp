@@ -12,10 +12,10 @@ export const Header = () => (
         <div className="content-container--center">
           <h1 className="heading-primary">
             <span className="heading-primary__main">Outdoors</span>
-            <span className="heading-primary__sub"> is where life happens</span>
+            <span className="heading-primary__sub">is where life happens</span>
           </h1>
           <Link className="header__title" to="/">
-            <button>button</button>
+            <button className="btn btn-white">Discover our tours</button>
           </Link>
         </div>
       </div>

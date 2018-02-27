@@ -29,20 +29,58 @@
 }
 
 .heading-primary {
+  backface-visibility: hidden; // Animations sometimes "shake" and this hack fixes that
   color: #fff;
   text-transform: uppercase;
 }
 
 .heading-primary__main {
-  display: block; // block elements each occupy all the available width create line breaks after and before them
+  animation-duration: 0.7s;
+  // animation-iteration-count: infinite;
+  animation-name: moveInLeft;
+  animation-timing-function: ease-out;
+  display: block; // block elements each occupy all the available width & create line breaks after and before them
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
 }
 
 .heading-primary__sub {
+  animation: moveInRight 1s ease-out;
   display: block;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 17px;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); // Start from the left
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0); // Back to normal state
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); // Start from the left
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0); // Back to normal state
+  }
 }
