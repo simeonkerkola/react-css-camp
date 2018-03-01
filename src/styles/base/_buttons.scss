@@ -7,15 +7,21 @@
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.btn--animated {
+  // name, duration, timing-function, delay
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards; // Adapt the animation's 0% styles when the animation starts
   transition: all .2s;
 
   &:hover {
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    box-shadow: 0 1rem 2rem rgba($black, .2);
     transform: translateY(-2px);
   }
 
   &:active {
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba($black, .2);
     transform: translateY(2px);
   }
 
@@ -28,7 +34,7 @@
     left: 0;
     position: absolute; // position reference to first relative position (.btn)
     top: 0;
-    transition: all .4s;
+    transition: all .5s;
     width: 100%;
     z-index: -1; // Hide to behind the button
   }
@@ -39,15 +45,9 @@
   }
 }
 
-.btn--animated {
-  // name, duration, timing-function, delay
-  animation: moveInBottom .5s ease-out .75s;
-  animation-fill-mode: backwards; // Adapt the animation's 0% styles when the animation starts
-}
-
 .btn--white {
   background-color: #fff;
-  color: #666;
+  color: $dark-grey;
 
   &::after {
     background-color: #fff;

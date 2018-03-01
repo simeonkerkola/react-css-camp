@@ -30,7 +30,7 @@
 
 .heading-primary {
   backface-visibility: hidden; // Animations sometimes "shake" and this hack fixes that
-  color: #fff;
+  color: $white;
   margin-bottom: 6rem;
   text-transform: uppercase;
 }
