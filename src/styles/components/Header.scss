@@ -35,7 +35,7 @@
   text-transform: uppercase;
 }
 
-.heading-primary__main {
+.heading-primary--main {
   animation-duration: 0.7s;
   // animation-iteration-count: infinite;
   animation-name: moveInLeft;
@@ -46,7 +46,7 @@
   letter-spacing: 35px;
 }
 
-.heading-primary__sub {
+.heading-primary--sub {
   animation: moveInRight 1s ease-out;
   display: block;
   font-size: 20px;
