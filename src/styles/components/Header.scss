@@ -1,8 +1,8 @@
 .header {
   background-image: linear-gradient(
     to right bottom,
-    rgba($light-green, 0.8),
-    rgba($dark-green, 0.8)
+    rgba($light-green, .8),
+    rgba($dark-green, .8)
   ),
     url('/images/hero.jpg');
   background-position: top; // As we resize, the top part of the image sticks at the position
@@ -19,49 +19,49 @@
 }
 
 .header__logo-box {
-  left: 40px;
+  left: 4rem;
   position: absolute; // Parent's (header) position relative,
-  top: 40px;
+  top: 4rem;
 }
 
 .header__logo {
-  height: 35px;
+  height: 3.5rem;
 }
 
 .heading-primary {
   backface-visibility: hidden; // Animations sometimes "shake" and this hack fixes that
   color: #fff;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
   text-transform: uppercase;
 }
 
 .heading-primary--main {
-  animation-duration: 0.7s;
+  animation-duration: .7s;
   // animation-iteration-count: infinite;
   animation-name: moveInLeft;
   animation-timing-function: ease-out;
   display: block; // block elements each occupy all the available width & create line breaks after and before them
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 3rem;
 }
 
 .heading-primary--sub {
   animation: moveInRight 1s ease-out;
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 17px;
+  letter-spacing: 1.7rem;
 }
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px); // Start from the left
+    transform: translateX(-10rem); // Start from the left
   }
 
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -73,11 +73,11 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px); // Start from the left
+    transform: translateX(10rem); // Start from the left
   }
 
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {

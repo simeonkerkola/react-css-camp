@@ -1,33 +1,34 @@
 .btn {
   border: none;
-  border-radius: 100px;
+  border-radius: 10rem;
   display: inline-block; // inline-block is treated as text, so to center a btn parent elements txt-algn: center
-  padding: 15px 40px;
+  font-size: 1.6rem;
+  padding: 1.5rem 4rem;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all 0.2s;
+  transition: all .2s;
 
   &:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
     transform: translateY(-2px);
   }
 
   &:active {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     transform: translateY(2px);
   }
 
   // Pseudo element
   &::after {
-    border-radius: 100px;
+    border-radius: 10rem;
     content: ''; // Must specify
     display: inline-block; // Must specify
     height: 100%;
     left: 0;
     position: absolute; // position reference to first relative position (.btn)
     top: 0;
-    transition: all 0.4s;
+    transition: all .4s;
     width: 100%;
     z-index: -1; // Hide to behind the button
   }
@@ -40,7 +41,7 @@
 
 .btn--animated {
   // name, duration, timing-function, delay
-  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; // Adapt the animation's 0% styles when the animation starts
 }
 
@@ -56,7 +57,7 @@
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px); // Start from the left
+    transform: translateY(3rem); // Start from the left
   }
 
   100% {
