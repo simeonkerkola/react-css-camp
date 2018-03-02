@@ -53,35 +53,3 @@
   font-weight: 700;
   letter-spacing: 1.7rem;
 }
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); // Start from the left
-  }
-
-  80% {
-    transform: translateX(1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0); // Back to normal state
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); // Start from the left
-  }
-
-  80% {
-    transform: translateX(-1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0); // Back to normal state
-  }
-}

@@ -1,0 +1,46 @@
+// moveInBottom
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); // Start from the left
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0); // Back to normal state
+  }
+}
+
+// moveInLeft
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); // Start from the left
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0); // Back to normal state
+  }
+}
+
+// moveInRight
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); // Start from the left
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0); // Back to normal state
+  }
+}

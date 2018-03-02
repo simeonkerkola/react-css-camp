@@ -53,15 +53,3 @@
     background-color: #fff;
   }
 }
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); // Start from the left
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0); // Back to normal state
-  }
-}
