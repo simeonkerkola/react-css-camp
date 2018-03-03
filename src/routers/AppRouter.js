@@ -7,7 +7,6 @@ import HelpPage from '../components/HelpPage';
 import NotFoundPage from '../components/NotFoundPage';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
-import Header from '../components/Header';
 
 export const history = createHistory();
 
@@ -15,7 +14,6 @@ const AppRouter = () => (
   // When using Router instead of BrowserRouter, we can provide our own history value
   <Router history={history}>
     <div>
-      <Header />
       <Switch>
         <PublicRoute path="/" component={LandingPage} exact />
         <PrivateRoute path="/dashboard" component={DashboardPage} />

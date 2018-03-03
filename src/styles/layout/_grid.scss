@@ -1,0 +1,60 @@
+.row {
+  background-color: #eee;
+  margin: 0 auto; // center block element inside a block element
+  max-width: 114rem; // 1140px standard
+
+  &:not(:last-child) {
+    // Everything BUT the last row
+    margin-bottom: $gutter-vertical;
+  }
+}
+
+// All the child elements of this row element are floated, so the hight collapses
+// and becomes 0 => include a clearfix function
+@include clearfix;
+
+// Select all the class atributes starting w/ "col-"
+[class^='col-'] {
+  float: left;
+
+  &:not(:last-child) {
+    // Everything BUT the last col
+    margin-right: $gutter-horizontal;
+  }
+}
+
+.col-1-of-2 {
+  background: goldenrod;
+  width: calc((100% - #{$gutter-horizontal}) / 2);
+}
+
+.col-1-of-3 {
+  background: thistle;
+  width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+}
+
+.col-2-of-3 {
+  background: burlywood;
+  width: calc(
+    2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
+  );
+}
+
+.col-1-of-4 {
+  background: sandybrown;
+  width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+}
+
+.col-2-of-4 {
+  background: khaki;
+  width: calc(
+    (2 * (100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal}
+  );
+}
+
+.col-3-of-4 {
+  background: lavender;
+  width: calc(
+    (3 * (100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal}
+  );
+}
