@@ -6,8 +6,10 @@
 // Base
 @import './base/animations';
 @import './base/base';
+@import './base/utilities';
 
 // Components
+@import './components/About';
 @import './components/buttons';
 @import './components/Header';
 @import './components/Landing';

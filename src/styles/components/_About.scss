@@ -1,0 +1,22 @@
+.section-about {
+  background-color: $light-grey-1;
+  margin-top: -20vh; // snug under the header. 95vh-70vh=20
+  padding: 25rem 0;
+}
+
+.heading-secondary {
+  -webkit-background-clip: text; // Clips the background to exactly the places where the text sits
+  background-image: linear-gradient($light-green, $dark-green);
+  color: transparent; // Change the text to transparent too
+  display: inline-block;
+  font-size: $font-size-xl;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  transition: all .2s;
+
+  &:hover {
+    text-shadow: .5rem 1rem 2rem rgba($green-shadow, .2);
+    transform: skewY(2deg) skewX(15deg);
+  }
+}

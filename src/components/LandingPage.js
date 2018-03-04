@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import About from './About';
 import Header from './Header';
 
 class LandingPage extends Component {
@@ -6,6 +7,10 @@ class LandingPage extends Component {
     return (
       <div>
         <Header />
+        <main>
+          <About />
+        </main>
+
         {/* <section className="grid-test">
           <div className="row">
             <div className="col-1-of-2">col 1-of-2</div>
