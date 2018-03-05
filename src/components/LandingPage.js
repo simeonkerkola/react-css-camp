@@ -8,7 +8,9 @@ class LandingPage extends Component {
       <div>
         <Header />
         <main>
-          <About />
+          <div className="u-content-container">
+            <About />
+          </div>
         </main>
 
         {/* <section className="grid-test">

@@ -14,3 +14,17 @@
     transform: skewY(2deg) skewX(15deg);
   }
 }
+
+.heading-tertiary {
+  font-size: $font-size-m;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: $font-size-m;
+
+  &:not(:last-child) {
+    margin-bottom: $spacing-s;
+  }
+}

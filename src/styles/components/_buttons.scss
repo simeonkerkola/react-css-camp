@@ -53,3 +53,29 @@
     background-color: #fff;
   }
 }
+
+.btn-text {
+  padding: $spacing-s;
+
+  &:link,
+  &:visited {
+    border-bottom: 1px solid $dark-green;
+    color: $dark-green;
+    display: inline-block;
+    padding: 3px;
+    text-decoration: none;
+    transition: all .2s;
+  }
+
+  &:hover {
+    background-color: $dark-green;
+    box-shadow: 0 1rem 2rem rgba($green-shadow, .2);
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 .5rem 1rem rgba($green-shadow, .2);
+    transform: translateY(2px);
+  }
+}

@@ -2,7 +2,7 @@
 $black: #000;
 $light-green: #7ed56f;
 $medium-green: #55c57a;
-$green-shadow: #1d462b;
+$green-shadow: #235434;
 $dark-green: #28b485;
 $dark-grey: #666;
 $light-grey-1: #f7f7f7;
@@ -15,7 +15,10 @@ $font-size-l: 2rem;
 $font-size-xl: 3.5rem;
 $font-size-xxl: 6rem;
 
-// Grid
-
+// Spacing
 $gutter-horizontal: 6rem;
 $gutter-vertical: 8rem;
+$spacing-xs: 1.5rem;
+$spacing-s: 3rem;
+$spacing-m: 8rem;
+$spacing-xl: 25rem;

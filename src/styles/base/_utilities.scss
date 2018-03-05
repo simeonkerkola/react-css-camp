@@ -2,6 +2,16 @@
   text-align: center;
 }
 
-.u-margin-bottom-8 {
-  margin-bottom: 8rem;
+.u-margin-bottom-s {
+  margin-bottom: $spacing-xs;
+}
+
+.u-margin-bottom-m {
+  margin-bottom: $spacing-m;
+}
+
+.u-content-container {
+  background-color: $light-grey-1;
+  margin: 0 auto;
+  padding: 0 $spacing-s;
 }
