@@ -1,4 +1,9 @@
-# Boilerplate
+# CSS CAMP
+
+Landing Page for a Css Camp.
+Made to test out a modern Css features, and **will** get overly whimsical at times.
+
+**Live Demo: https://css-camp.herokuapp.com/**
 
 ## 🏕 React & CSS.
 
