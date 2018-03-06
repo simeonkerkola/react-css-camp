@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import About from './About';
 import Header from './Header';
+import Features from './Features';
 
 class LandingPage extends Component {
   render() {
@@ -11,6 +12,7 @@ class LandingPage extends Component {
           <div className="u-content-container">
             <About />
           </div>
+          <Features />
         </main>
 
         {/* <section className="grid-test">
