@@ -23,7 +23,7 @@
 }
 
 // Tours
-.tour-card {
+.card {
   height: 40rem; // We have to specify height of the card and the side, or the height of the card will collapse
   perspective: 150rem; // How close or far the card turns, lower the value, the more dramatic
   position: relative;
@@ -37,7 +37,7 @@
   }
 }
 
-.tour-card__side {
+.card__side {
   backface-visibility: hidden; // Hide the back of the card
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(black, .15);
@@ -45,15 +45,15 @@
   left: 0;
   position: absolute; // Put the front and the back cards on top of each other
   top: 0;
-  transition: all 8s ease;
+  transition: all .8s ease;
   width: 100%;
 }
 
-.tour-card__side--front {
+.card__side--front {
   background: white;
 }
 
-.tour-card__side--back {
+.card__side--back {
   background-image: linear-gradient(
     to right bottom,
     $light-orange,
