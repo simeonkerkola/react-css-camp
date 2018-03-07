@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import About from './About';
 import Header from './Header';
 import Features from './Features';
+import Tours from './Tours';
 
 class LandingPage extends Component {
   render() {
@@ -13,6 +14,9 @@ class LandingPage extends Component {
             <About />
           </div>
           <Features />
+          <div className="u-content-container">
+            <Tours />
+          </div>
         </main>
 
         {/* <section className="grid-test">

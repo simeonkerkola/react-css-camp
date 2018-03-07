@@ -1,0 +1,63 @@
+// Features
+
+.feature-card {
+  background-color: rgba($light-grey-1, .8);
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($green-shadow, .15);
+  font-size: 1.5rem;
+  padding: $spacing-xs;
+  text-align: center;
+  transition: all .2s;
+
+  &:hover {
+    transform: translateY(-4px) scale(1.03);
+  }
+}
+
+.feature-card__icon {
+  -webkit-background-clip: text; // Clips the background to exactly the places where the text sits
+  background-image: linear-gradient($light-green, $dark-green);
+  color: transparent; // Change the text to transparent too
+  font-size: 6rem;
+  margin-bottom: .5rem;
+}
+
+// Tours
+.tour-card {
+  height: 40rem; // We have to specify height of the card and the side, or the height of the card will collapse
+  perspective: 150rem; // How close or far the card turns, lower the value, the more dramatic
+  position: relative;
+  // Animate the side when hovering the card, takes care of a card stuttering
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0deg);
+  }
+}
+
+.tour-card__side {
+  backface-visibility: hidden; // Hide the back of the card
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(black, .15);
+  height: 40rem; // We have to specify height of the card and the side, or the height of the card will collapse
+  left: 0;
+  position: absolute; // Put the front and the back cards on top of each other
+  top: 0;
+  transition: all .8s ease;
+  width: 100%;
+}
+
+.tour-card__side--front {
+  background: white;
+}
+
+.tour-card__side--back {
+  background-image: linear-gradient(
+    to right bottom,
+    $light-orange,
+    $dark-orange
+  );
+  transform: rotateY(180deg);
+}
