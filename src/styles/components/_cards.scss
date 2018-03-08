@@ -1,4 +1,4 @@
-// Features
+// FEATURES
 
 .feature-card {
   background-color: rgba($light-grey-1, .8);
@@ -22,7 +22,8 @@
   margin-bottom: .5rem;
 }
 
-// Tours
+// TOURS
+// Functionality
 .card {
   height: 40rem; // We have to specify height of the card and the side, or the height of the card will collapse
   perspective: 150rem; // How close or far the card turns, lower the value, the more dramatic
@@ -39,10 +40,11 @@
 
 .card__side {
   backface-visibility: hidden; // Hide the back of the card
-  border-radius: 3px;
+  border-radius: 3px; // + Overflow: hidden
   box-shadow: 0 1.5rem 4rem rgba(black, .15);
   height: 40rem; // We have to specify height of the card and the side, or the height of the card will collapse
   left: 0;
+  overflow: hidden; // Hide the background images sharp corners
   position: absolute; // Put the front and the back cards on top of each other
   top: 0;
   transition: all .8s ease;
@@ -60,4 +62,21 @@
     $dark-orange
   );
   transform: rotateY(180deg);
+}
+
+// Front side styling
+.card__picture {
+  background-blend-mode: screen;
+  background-size: cover; // Gradient over the background-image
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  height: 23rem;
+}
+
+.card__picture--1 {
+  background-image: linear-gradient(
+    to right bottom,
+    $light-orange,
+    $dark-orange
+  ),
+    url('/images/nat-5.jpg');
 }
