@@ -10,14 +10,13 @@
 @import './base/typography';
 
 // Components
-@import './components/About';
+@import './components/LandingAbout';
+@import './components/LandingFeatures';
+@import './components/LandingHeader';
+@import './components/LandingTours';
 @import './components/buttons';
 @import './components/cards';
 @import './components/composition';
-@import './components/Features';
-@import './components/Header';
-@import './components/Landing';
-@import './components/Tours';
 
 // Layout
 @import './layout/content-container';

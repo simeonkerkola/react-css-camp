@@ -11,8 +11,18 @@ const Tours = () => (
               <div className="card__picture card__picture--1">
                 <br />
               </div>
-              <div className="card__heading">Heading</div>
-              <div className="card__details">Details</div>
+              <h4 className="card__heading">
+                <span className="card__heading-background--1">The sea explorer</span>
+              </h4>
+              <div className="card__details">
+                <ul>
+                  <li>3 Day Tour</li>
+                  <li>Up to 30 people</li>
+                  <li>2 tour guides</li>
+                  <li>Sleep in cozy hotels</li>
+                  <li>Difficulty: Easy tour</li>
+                </ul>
+              </div>
             </div>
             <div className="card__side card__side--back">back</div>
           </div>

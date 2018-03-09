@@ -25,7 +25,7 @@
 // TOURS
 // Functionality
 .card {
-  height: 40rem; // We have to specify height of the card and the side, or the height of the card will collapse
+  height: 50rem; // We have to specify height of the card and the side, or the height of the card will collapse
   perspective: 150rem; // How close or far the card turns, lower the value, the more dramatic
   position: relative;
   // Animate the side when hovering the card, takes care of a card stuttering
@@ -42,7 +42,7 @@
   backface-visibility: hidden; // Hide the back of the card
   border-radius: 3px; // + Overflow: hidden
   box-shadow: 0 1.5rem 4rem rgba(black, .15);
-  height: 40rem; // We have to specify height of the card and the side, or the height of the card will collapse
+  height: 50rem; // We have to specify height of the card and the side, or the height of the card will collapse
   left: 0;
   overflow: hidden; // Hide the background images sharp corners
   position: absolute; // Put the front and the back cards on top of each other
@@ -53,6 +53,7 @@
 
 .card__side--front {
   background: white;
+  position: relative;
 }
 
 .card__side--back {
@@ -79,4 +80,46 @@
     $dark-orange
   ),
     url('/images/nat-5.jpg');
+}
+
+.card__heading {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 300;
+  position: absolute;
+  right: 2rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 12rem;
+  width: 75%;
+  z-index: 1;
+}
+
+.card__heading-background--1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($light-orange, .8),
+    rgba($dark-orange, .8)
+  );
+  box-decoration-break: clone; // Single element on 2 lines, padding looks like 2 elements
+  // padding: 1rem 1.5rem;
+}
+
+.card__details {
+  ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 80%;
+  }
+
+  li {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-align: center;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $light-grey-2;
+    }
+  }
 }

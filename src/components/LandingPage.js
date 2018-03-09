@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import About from './About';
-import Header from './Header';
-import Features from './Features';
-import Tours from './Tours';
+import About from './LandingAbout';
+import Header from './LandingHeader';
+import Features from './LandingFeatures';
+import Tours from './LandingTours';
 
 class LandingPage extends Component {
   render() {
