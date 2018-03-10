@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Card = ({ color }) => (
+const Card = ({ cardStyle }) => (
   <div className="card">
     <div className="card__side card__side--front">
-      <div className={`card__picture card__picture--${color}`}>
+      <div className={`card__picture card__picture--${cardStyle}`}>
         <br />
       </div>
       <h4 className="card__heading">
-        <span className={`card__heading-background--${color}`}>The sea explorer</span>
+        <span className={`card__heading-background--${cardStyle}`}>The sea explorer</span>
       </h4>
       <div className="card__details">
         <ul>

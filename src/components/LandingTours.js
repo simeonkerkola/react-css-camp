@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import FlipCard from './FlipCard';
 
 const Tours = () => (
   <section className="section-tours">
@@ -7,13 +7,13 @@ const Tours = () => (
       <h2 className="heading-secondary u-margin-bottom-m">Most popular tours</h2>
       <div className="row">
         <div className="col-1-of-3">
-          <Card color="orange" />
+          <FlipCard cardStyle="orange" />
         </div>
         <div className="col-1-of-3">
-          <Card color="orange" />
+          <FlipCard cardStyle="orange" />
         </div>
         <div className="col-1-of-3">
-          <Card color="orange" />
+          <FlipCard cardStyle="orange" />
         </div>
       </div>
     </div>

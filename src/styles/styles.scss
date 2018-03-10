@@ -10,6 +10,7 @@
 @import './base/typography';
 
 // Components
+@import './components/FlipCard';
 @import './components/LandingAbout';
 @import './components/LandingFeatures';
 @import './components/LandingHeader';
@@ -17,6 +18,7 @@
 @import './components/buttons';
 @import './components/cards';
 @import './components/composition';
+@import './components/loader';
 
 // Layout
 @import './layout/content-container';
