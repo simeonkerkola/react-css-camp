@@ -7,6 +7,7 @@
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .btn--animated {
@@ -46,11 +47,11 @@
 }
 
 .btn--white {
-  background-color: #fff;
+  background-color: white;
   color: $dark-grey;
 
   &::after {
-    background-color: #fff;
+    background-color: white;
   }
 }
 

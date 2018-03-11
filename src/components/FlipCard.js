@@ -1,37 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Card = ({ cardStyle }) => (
-  <div className="card">
-    <div className="card__side card__side--front">
-      <div className={`card__picture card__picture--${cardStyle}`}>
-        <br />
+const Card = ({ cardStyle, list, price, title }) => {
+  const renderList = list.map(item => <li key={item}>{item}</li>);
+  return (
+    <div className="card">
+      <div className="card__side card__side--front">
+        <div className={`card__picture card__picture--${cardStyle}`}>
+          <br />
+        </div>
+        <h4 className="card__heading">
+          <span className={`card__heading-background--${cardStyle}`}>{title}</span>
+        </h4>
+        <div className="card__details">
+          <ul>{renderList}</ul>
+        </div>
       </div>
-      <h4 className="card__heading">
-        <span className={`card__heading-background--${cardStyle}`}>The sea explorer</span>
-      </h4>
-      <div className="card__details">
-        <ul>
-          <li>3 Day Tour</li>
-          <li>Up to 30 people</li>
-          <li>2 tour guides</li>
-          <li>Sleep in cozy hotels</li>
-          <li>Difficulty: Easy tour</li>
-        </ul>
-      </div>
-    </div>
-    <div className="card__side card__side--back">
-      <div className="text-box--center">
-        <div className="card__price-box">
-          <div className="card__price-only">Only</div>
-          <div className="card__price-amount">€297</div>
-          <Link to="#0" className="btn btn--white">
-            Book now!
-          </Link>
+      <div className={`card__side card__side--back card__side--back-${cardStyle}`}>
+        <div className="text-box--center">
+          <div className="card__price-box">
+            <div className="card__price-only">Only</div>
+            <div className="card__price-amount">€{price}</div>
+            <Link to="#0" className="btn btn--white btn--animated">
+              Book now!
+            </Link>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
-
+  );
+};
 export default Card;
