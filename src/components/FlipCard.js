@@ -21,7 +21,7 @@ const Card = ({ cardStyle, list, price, title }) => {
           <div className="card__price-box">
             <div className="card__price-only">Only</div>
             <div className="card__price-amount">€{price}</div>
-            <Link to="#0" className="btn btn--white btn--animated">
+            <Link to="#0" className="btn btn--white">
               Book now!
             </Link>
           </div>

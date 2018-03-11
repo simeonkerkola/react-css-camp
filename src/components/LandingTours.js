@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import React from 'react';
 import FlipCard from './FlipCard';
 
@@ -48,6 +50,11 @@ const Tours = () => (
             ]}
           />
         </div>
+      </div>
+      <div className="u-content-container u-center-text">
+        <Link to="#0" className="btn btn--green btn--animated">
+          Discover all tours
+        </Link>
       </div>
     </div>
   </section>

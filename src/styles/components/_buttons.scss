@@ -7,14 +7,8 @@
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.btn--animated {
-  // name, duration, timing-function, delay
-  animation: moveInBottom .5s ease-out .75s;
-  animation-fill-mode: backwards; // Adapt the animation's 0% styles when the animation starts
   transition: all .2s;
+  white-space: nowrap;
 
   &:hover {
     box-shadow: 0 1rem 2rem rgba($black, .2);
@@ -25,6 +19,13 @@
     box-shadow: 0 .5rem 1rem rgba($black, .2);
     transform: translateY(2px);
   }
+}
+
+.btn--animated {
+  // name, duration, timing-function, delay
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards; // Adapt the animation's 0% styles when the animation starts
+  transition: all .2s;
 
   // Pseudo element
   &::after {
@@ -55,15 +56,23 @@
   }
 }
 
+.btn--green {
+  background-color: $dark-green;
+  color: white;
+
+  &::after {
+    background-color: $dark-green;
+  }
+}
+
 .btn-text {
-  padding: $spacing-s;
+  padding: 1rem $spacing-xs;
 
   &:link,
   &:visited {
     border-bottom: 1px solid $dark-green;
     color: $dark-green;
     display: inline-block;
-    padding: 3px;
     text-decoration: none;
     transition: all .2s;
   }

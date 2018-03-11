@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import About from './LandingAbout';
-import Header from './LandingHeader';
-import Features from './LandingFeatures';
-import Tours from './LandingTours';
+import LandingHeader from './LandingHeader';
+import LanfiFeatures from './LandingFeatures';
+import LandingTours from './LandingTours';
 
 class LandingPage extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <LandingHeader />
         <main>
           <div className="u-content-container">
             <About />
           </div>
-          <Features />
+          <LanfiFeatures />
           <div className="u-content-container">
-            <Tours />
+            <LandingTours />
           </div>
         </main>
 
