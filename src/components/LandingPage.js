@@ -3,6 +3,7 @@ import About from './LandingAbout';
 import LandingHeader from './LandingHeader';
 import LanfiFeatures from './LandingFeatures';
 import LandingTours from './LandingTours';
+import LandingStories from './LandingStories';
 
 class LandingPage extends Component {
   render() {
@@ -16,6 +17,9 @@ class LandingPage extends Component {
           <LanfiFeatures />
           <div className="u-content-container">
             <LandingTours />
+          </div>
+          <div className="u-content-container">
+            <LandingStories />
           </div>
         </main>
 

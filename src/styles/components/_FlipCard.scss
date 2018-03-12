@@ -16,7 +16,7 @@
 .card__side {
   backface-visibility: hidden; // Hide the back of the card
   border-radius: 3px; // + Overflow: hidden
-  box-shadow: 0 1.5rem 4rem rgba(black, .15);
+  box-shadow: 0 1.5rem 4rem rgba($green-shadow, .15);
   height: 50rem; // We have to specify height of the card and the side, or the height of the card will collapse
   left: 0;
   overflow: hidden; // Hide the background images sharp corners

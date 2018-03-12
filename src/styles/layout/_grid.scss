@@ -6,11 +6,10 @@
     // Everything BUT the last row
     margin-bottom: $gutter-vertical;
   }
+  // All the child elements of this row element are floated, so the height collapses
+  // and becomes 0 => include a clearfix function
+  @include clearfix;
 }
-
-// All the child elements of this row element are floated, so the hight collapses
-// and becomes 0 => include a clearfix function
-@include clearfix;
 
 // Select all the class atributes starting w/ "col-"
 [class^='col-'] {
