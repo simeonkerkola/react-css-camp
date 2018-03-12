@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Story from './Story';
 
 const LandingStories = () => (
   <section className="section-stories">
@@ -6,21 +8,31 @@ const LandingStories = () => (
       <h2 className="heading-secondary ">We make people genuinely happy</h2>
     </div>
     <div className="row">
-      <div className="story">
-        <figure className="story__shape">
-          <img src="/images/nat-8.jpg" alt="Jane Roe" className="story__img" />
-        </figure>
-        <div className="story__text">
-          <h3 className="heading-tertiary u-margin-bottom-s">
-            I had the best week ever with my co-workers!
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo molestias blanditiis
-            praesentium itaque accusantium! Hic itaque, consequuntur optio, quia reiciendis iure,
-            atque aspernatur voluptates inventore tenetur commodi nam quod modi.
-          </p>
-        </div>
-      </div>
+      <Story
+        author="Jane Roe"
+        imgSrc="/images/nat-8.jpg"
+        title="I had the best week ever with my co-workers!"
+        story="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo molestias blanditiis
+        praesentium itaque accusantium! Hic itaque, consequuntur optio, quia reiciendis iure, atque
+        aspernatur voluptates inventore tenetur commodi nam quod modi."
+      />
+    </div>
+
+    <div className="row">
+      <Story
+        author="John Doe"
+        imgSrc="/images/nat-9.jpg"
+        title="WOW! My life is completely different now"
+        story="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aliquid atque distinctio vero, sequi culpa iure aperiam,
+        obcaecati modi molestiae, provident perspiciatis, expedita cum
+        nesciunt quidem. Saepe vitae vero, error incidunt!"
+      />
+    </div>
+    <div className="u-center-text">
+      <Link to="#0" className="btn-text">
+        Read more stories &rarr;
+      </Link>
     </div>
   </section>
 );
