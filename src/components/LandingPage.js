@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import About from './LandingAbout';
+import LandingAbout from './LandingAbout';
 import LandingHeader from './LandingHeader';
-import LanfiFeatures from './LandingFeatures';
+import LandingFeatures from './LandingFeatures';
 import LandingTours from './LandingTours';
 import LandingStories from './LandingStories';
 
@@ -11,16 +11,10 @@ class LandingPage extends Component {
       <div>
         <LandingHeader />
         <main>
-          <div className="u-content-container">
-            <About />
-          </div>
-          <LanfiFeatures />
-          <div className="u-content-container">
-            <LandingTours />
-          </div>
-          <div className="u-content-container">
-            <LandingStories />
-          </div>
+          <LandingAbout />
+          <LandingFeatures />
+          <LandingTours />
+          <LandingStories />
         </main>
 
         {/* <section className="grid-test">

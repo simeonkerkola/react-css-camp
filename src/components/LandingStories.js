@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Story from './Story';
+import BgVideo from './BgVideo';
 
 const LandingStories = () => (
   <section className="section-stories">
+    <div className="bg-video">
+      <BgVideo videoPath="/images/video.mp4" />
+    </div>
     <div className="u-center-text u-margin-bottom-m">
       <h2 className="heading-secondary ">We make people genuinely happy</h2>
     </div>

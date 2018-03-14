@@ -7,6 +7,7 @@
     url('/images/nat-4.jpg');
   background-position: top; // As we resize, the top part of the image sticks at the position
   background-size: cover; // Try to fit whatever the viewport size is
+  margin-top: -8rem;
   padding: 20rem 0;
   transform: skewY(-7deg);
 
