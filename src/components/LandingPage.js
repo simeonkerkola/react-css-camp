@@ -22,9 +22,10 @@ class LandingPage extends Component {
           <section className="section-stories">
             <LandingStories />
           </section>
-
           <div className="section-booking">
-            <Booking />
+            <div className="row">
+              <Booking />
+            </div>
           </div>
         </main>
 
