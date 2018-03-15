@@ -4,7 +4,7 @@ import Story from './Story';
 import BgVideo from './BgVideo';
 
 const LandingStories = () => (
-  <section className="section-stories">
+  <div>
     <div className="bg-video">
       <BgVideo videoPath="/images/video.mp4" />
     </div>
@@ -38,7 +38,7 @@ const LandingStories = () => (
         Read more stories &rarr;
       </Link>
     </div>
-  </section>
+  </div>
 );
 
 export default LandingStories;

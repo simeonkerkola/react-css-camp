@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Booking from './Booking';
 import LandingAbout from './LandingAbout';
 import LandingHeader from './LandingHeader';
 import LandingFeatures from './LandingFeatures';
@@ -11,10 +12,20 @@ class LandingPage extends Component {
       <div>
         <LandingHeader />
         <main>
-          <LandingAbout />
-          <LandingFeatures />
+          <section className="section-about">
+            <LandingAbout />
+          </section>
+          <section className="section-features">
+            <LandingFeatures />
+          </section>
           <LandingTours />
-          <LandingStories />
+          <section className="section-stories">
+            <LandingStories />
+          </section>
+
+          <div className="section-booking">
+            <Booking />
+          </div>
         </main>
 
         {/* <section className="grid-test">
