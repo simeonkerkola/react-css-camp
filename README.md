@@ -1,11 +1,9 @@
-# CSS CAMP
+# 🏕 React & CSS.
 
 Landing Page for a Css Camp.  
-Made to test out a modern Css features, and **will** get overly whimsical at times.
+Build to test out a modern Css features, and will get overly whimsical at times.
 
 **Live Demo: https://css-camp.herokuapp.com/**
-
-## 🏕 React & CSS.
 
 **Installation:**
 
@@ -13,3 +11,4 @@ Made to test out a modern Css features, and **will** get overly whimsical at tim
 * Install the dependencies `$ npm install`
 * Build developing environment `$ npm run build:dev`
 * Run dev-server `$ npm run dev-server`
+* Open your browser: `http://localhost:8080/`
