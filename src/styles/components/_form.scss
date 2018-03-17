@@ -1,0 +1,102 @@
+.form {
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form__input {
+  background-color: rgba(white, .5);
+  border: none;
+
+  // So the 3px border on focus doesn't push the other inputs down
+  border-bottom: 3px solid transparent;
+  border-radius: 2px;
+  color: inherit; // Forms doesn't inherit font properties
+  display: block; // Own line
+  font-family: inherit; // Not Lato on default
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  transition: .2s ease-in;
+  width: 90%;
+
+  &:focus {
+    border-bottom: 3px solid $light-green;
+    box-shadow: 0 1rem 2rem rgba($green-shadow, .1);
+    outline: none;
+  }
+
+  &:focus:invalid {
+    border-bottom: 3px solid $dark-orange;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $dark-grey-2;
+  }
+}
+
+.form__label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem; // Lined up w/ input padding
+  margin-top: .7rem;
+  transition: all .3s;
+}
+
+// Input is selected, styling the label
+// Adjacent sibling selector "+" (the next sibling of selected ie. form__ input)
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  transform: translateY(-4rem);
+  visibility: hidden;
+}
+
+.form__radio-group {
+  display: inline-block;
+  min-width: 50%;
+}
+
+.form__radio-input {
+  display: none;
+}
+
+.form__radio-label {
+  cursor: pointer;
+  font-size: $font-size-m;
+  padding-left: 5rem;
+  position: relative;
+}
+
+// Green radio button
+.form__radio-button {
+  border: 5px solid $dark-green;
+  border-radius: 50%;
+  display: inline-block;
+  height: 3rem;
+  left: 0;
+  position: absolute;
+  top: -.4rem;
+  width: 3rem;
+
+  // The inner circle
+  &::after {
+    background-color: $dark-green;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 1.3rem;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .2s;
+    width: 1.3rem;
+  }
+}
+
+// Select the sibling label, then the child button
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1;
+}

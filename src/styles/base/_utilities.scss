@@ -1,16 +1,20 @@
 .u-center-text {
-  text-align: center;
+  text-align: center !important;
+}
+
+.u-margin-bottom-xs {
+  margin-bottom: $spacing-xs !important;
 }
 
 .u-margin-bottom-s {
-  margin-bottom: $spacing-xs;
+  margin-bottom: $spacing-s !important;
 }
 
 .u-margin-bottom-m {
-  margin-bottom: $spacing-m;
+  margin-bottom: $spacing-m !important;
 }
 
 .u-content-container {
   margin: 0 auto;
-  padding: 0 $spacing-s;
+  padding: 0 $spacing-s !important;
 }

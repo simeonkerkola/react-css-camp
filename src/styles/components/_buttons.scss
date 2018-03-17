@@ -15,8 +15,10 @@
     transform: translateY(-2px);
   }
 
-  &:active {
+  &:active,
+  &:focus {
     box-shadow: 0 .5rem 1rem rgba($black, .2);
+    outline: none; // Remove the blue outline when clicking a button
     transform: translateY(2px);
   }
 }

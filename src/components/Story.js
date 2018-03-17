@@ -7,7 +7,7 @@ const Story = ({ author, imgSrc, title, story }) => (
       <figcaption className="story__caption">{author}</figcaption>
     </figure>
     <div className="story__text">
-      <h3 className="heading-tertiary u-margin-bottom-s">{title}</h3>
+      <h3 className="heading-tertiary u-margin-bottom-xs">{title}</h3>
       <p>{story}</p>
     </div>
   </div>

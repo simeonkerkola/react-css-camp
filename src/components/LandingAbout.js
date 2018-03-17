@@ -8,7 +8,7 @@ const About = () => (
     </div>
     <div className="row">
       <div className="col-1-of-2">
-        <h3 className="heading-tertiary u-margin-bottom-s">
+        <h3 className="heading-tertiary u-margin-bottom-xs">
           You are going to fall in love with nature.
         </h3>
         <p>
@@ -16,7 +16,7 @@ const About = () => (
           officiis sed doloremque neque eligendi, rem architecto laborum deleniti molestias fugit
           tempora asperiores tempore, quae doloribus! At.
         </p>
-        <h3 className="heading-tertiary u-margin-bottom-s">
+        <h3 className="heading-tertiary u-margin-bottom-xs">
           Live adventures like you never had before.
         </h3>
         <p>

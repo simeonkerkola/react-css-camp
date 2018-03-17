@@ -6,8 +6,13 @@
     transparent 50%
   ),
     url('/images/nat-10.jpg');
-  background-size: 100%; // 100% same as cover
+  background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($green-shadow, .3);
-  height: 50rem;
+  height: 58rem;
+}
+
+.book__form {
+  padding: 6rem;
+  width: 50%;
 }
