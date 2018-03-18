@@ -22,8 +22,6 @@
 }
 
 p {
-  font-size: $font-size-m;
-
   &:not(:last-child) {
     margin-bottom: $spacing-s;
   }

@@ -5,6 +5,7 @@ import LandingHeader from './LandingHeader';
 import LandingFeatures from './LandingFeatures';
 import LandingTours from './LandingTours';
 import LandingStories from './LandingStories';
+import Footer from './Footer';
 
 class LandingPage extends Component {
   render() {
@@ -28,6 +29,7 @@ class LandingPage extends Component {
             </div>
           </div>
         </main>
+        <Footer />
 
         {/* <section className="grid-test">
           <div className="row">
