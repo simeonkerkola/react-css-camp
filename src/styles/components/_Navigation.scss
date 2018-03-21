@@ -1,0 +1,83 @@
+.navigation {
+}
+
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__button {
+  background-color: white;
+  border-radius: 50%;
+  height: 7rem;
+  position: fixed;
+  right: 6rem;
+  top: 6rem;
+  width: 7rem;
+  z-index: 3000;
+}
+
+.navigation__background {
+  // radial-gradient starts from the middle of an element
+  background-image: radial-gradient($light-green, $dark-green);
+  border-radius: 50%;
+  height: 6rem;
+  position: fixed; // Doesn't change the position as we scroll the page
+  right: 6.5rem;
+  top: 6.5rem;
+  transform: scale(80);
+  width: 6rem;
+  z-index: 1000;
+}
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+}
+
+.navigation__list {
+  @include center-horizontal-vertical;
+
+  list-style: none;
+  text-align: center;
+}
+
+.navigation__item {
+  margin: 1rem;
+}
+
+.navigation__link {
+  &:link,
+  &:visited {
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      white 50%
+    );
+    background-size: 220%; // Push white background all the way to the right
+    color: white;
+    display: inline-block;
+    font-size: $font-size-l;
+    font-weight: 300;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .4s;
+
+    span {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+  }
+
+  &:hover,
+  &:active {
+    background-position: 100%; // Move the white background back to left
+    color: $dark-green;
+    transform: translateX(1rem);
+  }
+}

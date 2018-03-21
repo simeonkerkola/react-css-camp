@@ -81,16 +81,14 @@
 
   // The inner circle
   &::after {
+    @include center-horizontal-vertical;
+
     background-color: $dark-green;
     border-radius: 50%;
     content: '';
     display: block;
     height: 1.3rem;
-    left: 50%;
     opacity: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
     transition: opacity .2s;
     width: 1.3rem;
   }

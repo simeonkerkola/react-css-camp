@@ -6,11 +6,13 @@ import LandingFeatures from './LandingFeatures';
 import LandingTours from './LandingTours';
 import LandingStories from './LandingStories';
 import Footer from './Footer';
+import Navigation from './Navigation';
 
 class LandingPage extends Component {
   render() {
     return (
       <div>
+        <Navigation />
         <LandingHeader />
         <main>
           <section className="section-about">
