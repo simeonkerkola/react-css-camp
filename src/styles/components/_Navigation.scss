@@ -14,18 +14,76 @@
     left: 0;
     opacity: 1;
   }
+
+  // Cross icon when open, hamburger when closed
+  &:checked + .navigation__button .navigation__icon {
+    background-color: transparent; // Hides the middle line
+
+    &::before {
+      top: 0;
+      transform: rotate(135deg); // 180 - 45deg
+    }
+
+    &::after {
+      top: 0;
+      transform: rotate(-135deg);
+    }
+  }
 }
 
 .navigation__button {
   background-color: white;
   border-radius: 50%;
   box-shadow: 0 1rem 3rem rgba($green-shadow, .1);
+  cursor: pointer;
   height: 7rem;
   position: fixed;
   right: 6rem;
+  text-align: center; // Center the icon horizontally
   top: 6rem;
   width: 7rem;
   z-index: 3000;
+
+  &:hover {
+    .navigation__icon::before {
+      top: -1rem;
+    }
+
+    .navigation__icon::after {
+      top: 1rem;
+    }
+  }
+}
+
+// ICON
+.navigation__icon {
+  margin-top: 3.5rem;
+  position: relative;
+
+  &,
+  &::before,
+  &::after {
+    background-color: $dark-grey;
+    display: inline-block;
+    height: 2px;
+    width: 3rem;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    transition: all .2s;
+  }
+
+  &::before {
+    top: -.8rem;
+  }
+
+  &::after {
+    top: .8rem;
+  }
 }
 
 .navigation__background {
