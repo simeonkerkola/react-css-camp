@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navigation = () => (
   <div className="navigation">
-    <input type="checkbox" id="navi-toggle" className="navigatin__checkbox" />
+    <input type="checkbox" id="navi-toggle" className="navigation__checkbox" />
     <label htmlFor="navi-toggle" className="navigation__button">
       Menu
     </label>
