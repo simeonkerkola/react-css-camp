@@ -27,29 +27,3 @@
 .header__logo {
   height: 3.5rem;
 }
-
-.heading-primary {
-  backface-visibility: hidden; // Animations sometimes "shake" and this hack fixes that
-  color: $white;
-  margin-bottom: 6rem;
-  text-transform: uppercase;
-}
-
-.heading-primary--main {
-  animation-duration: .7s;
-  // animation-iteration-count: infinite;
-  animation-name: moveInLeft;
-  animation-timing-function: ease-out;
-  display: block; // block elements each occupy all the available width & create line breaks after and before them
-  font-size: $font-size-xxl;
-  font-weight: 400;
-  letter-spacing: 3rem;
-}
-
-.heading-primary--sub {
-  animation: moveInRight 1s ease-out;
-  display: block;
-  font-size: $font-size-l;
-  font-weight: 700;
-  letter-spacing: 1.7rem;
-}
