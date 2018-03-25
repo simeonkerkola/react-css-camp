@@ -91,19 +91,3 @@
     transform: translateY(2px);
   }
 }
-
-.btn-close {
-  border: none;
-  color: $dark-grey;
-  display: inline-block;
-  font-size: 3rem;
-  padding: 0 1rem;
-  position: absolute;
-  right: 2.5rem;
-  text-decoration: none;
-  top: 2.5rem;
-
-  &:hover {
-    color: $dark-green;
-  }
-}
