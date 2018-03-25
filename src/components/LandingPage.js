@@ -7,6 +7,7 @@ import LandingTours from './LandingTours';
 import LandingStories from './LandingStories';
 import Footer from './Footer';
 import Navigation from './Navigation';
+import BookingModal from './BookingModal';
 
 class LandingPage extends Component {
   render() {
@@ -32,6 +33,7 @@ class LandingPage extends Component {
           </div>
         </main>
         <Footer />
+        <BookingModal />
 
         {/* <section className="grid-test">
           <div className="row">

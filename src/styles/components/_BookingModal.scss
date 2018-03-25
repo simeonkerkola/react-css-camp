@@ -1,0 +1,67 @@
+.modal {
+  background-color: rgba(black, .7);
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: all .3s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 10000; // On top of everything
+}
+
+.modal--show {
+  opacity: 1;
+  visibility: visible;
+}
+
+// When the modal opens
+.modal--show .modal__content {
+  opacity: 1;
+
+  // One transform translate coming from the mixin, so have to override it for the scale to work
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal__content {
+  @include absCenter;
+
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 2rem 4rem rgba($green-shadow, .2);
+  display: table; // Each table cell has the same height
+  opacity: 0;
+  overflow: hidden;
+
+  // One transform translate coming from the mixin, so have to override it for the scale to work
+  transform: translate(-50%, -50%) scale(.25);
+  transition: all .3s .2s; // Delay .2s
+  width: 70%;
+}
+
+.modal__left {
+  display: table-cell;
+  width: 33.333333%; // Not necessary
+}
+
+.modal__right {
+  display: table-cell;
+  padding: 3rem;
+  vertical-align: middle;
+  width: 66.666667%;
+}
+
+.modal__img {
+  backface-visibility: hidden;
+  display: block;
+  width: 100%;
+}
+
+.modal__text {
+  column-count: 2;
+  column-gap: 4rem;
+  column-rule: 1px solid $light-grey-2;
+  //  hyphens: auto; // No real need for these here
+  margin-bottom: 4rem;
+}

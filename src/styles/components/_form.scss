@@ -81,7 +81,7 @@
 
   // The inner circle
   &::after {
-    @include center-horizontal-vertical;
+    @include absCenter;
 
     background-color: $dark-green;
     border-radius: 50%;
