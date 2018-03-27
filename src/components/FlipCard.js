@@ -23,7 +23,7 @@ class Card extends React.Component {
           </div>
         </div>
         <div className={`card__side card__side--back card__side--back-${cardStyle}`}>
-          <div className="text-box--center">
+          <div className="card__back-box">
             <div className="card__price-box">
               <div className="card__price-only">Only</div>
               <div className="card__price-amount">€{price}</div>

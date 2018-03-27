@@ -12,11 +12,42 @@
   transform: skewY(-7deg);
 
   @include respond(tab-port) {
-    padding: 15rem 0;
+    padding: 10rem 0;
   }
 
   // .section-features's direct child, all of them
   & > * {
     transform: skewY(7deg);
+  }
+}
+
+// Cards
+
+.feature-card {
+  background-color: rgba($light-grey-1, .8);
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($green-shadow, .15);
+  font-size: 1.5rem;
+  padding: $spacing-xs;
+  text-align: center;
+  transition: all .2s;
+
+  @include respond(tab-port) {
+  }
+
+  &:hover {
+    transform: translateY(-4px) scale(1.03);
+  }
+}
+
+.feature-card__icon {
+  -webkit-background-clip: text; // Clips the background to exactly the places where the text sits
+  background-image: linear-gradient($light-green, $dark-green);
+  color: transparent; // Change the text to transparent too
+  font-size: 6rem;
+  margin-bottom: .5rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 0;
   }
 }
