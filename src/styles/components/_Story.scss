@@ -5,13 +5,23 @@
   margin: 0 auto;
   padding: 6rem;
   padding-left: 9rem;
-  transform: skewx(-12deg);
+  transform: skewX(-12deg);
   width: 75%;
 
   // .story's direct child, all of them, but can't have 2 transform props on one element
   // & > * {
   //   transform: skewX(12deg);
   // }
+
+  @include respond(tab-port) {
+    padding: $spacing-s;
+    padding-left: $spacing-m;
+    width: 100%;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0);
+  }
 
   &:hover .story__caption {
     opacity: 1;
@@ -37,6 +47,10 @@
   // Best way to move aroud a floated element is not to mess with margins
   transform: translateX(-3rem) skewX(12deg);
   width: 15rem;
+
+  @include respond(phone) {
+    transform: translateX(-3rem) skewX(0);
+  }
 }
 
 .story__img {
@@ -48,6 +62,10 @@
 
 .story__text {
   transform: skewX(12deg);
+
+  @include respond(phone) {
+    transform: skewX(0);
+  }
 }
 
 .story__caption {
