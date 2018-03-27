@@ -3,11 +3,19 @@
   margin-top: -20vh; // snug under the header. 95vh-70vh=20
   padding: $spacing-xl 0;
   padding-bottom: $spacing-xl;
+
+  @include respond(phone) {
+    padding: 20rem 0;
+  }
 }
 
 .section-booking {
   background-image: linear-gradient(to right bottom, $light-green, $dark-green);
   padding: 15rem;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .section-features {
@@ -16,10 +24,18 @@
 .section-stories {
   padding: 10rem 0;
   position: relative;
+
+  @include respond(tab-port) {
+    padding: 7rem 0;
+  }
 }
 
 .section-tours {
   background: $light-grey-1;
   margin-top: -10rem;
   padding: 20rem 0 5rem 0;
+
+  @include respond(tab-port) {
+    padding: 17rem 0 5rem 0;
+  }
 }

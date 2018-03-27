@@ -3,11 +3,19 @@
   color: $light-grey-2;
   font-size: 1.4rem;
   padding: 10rem 0;
+
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
 }
 
 .footer__logo-box {
   margin-bottom: 8rem;
   text-align: center;
+
+  @include respond(tab-port) {
+    margin-bottom: $spacing-m;
+  }
 }
 
 .footer__logo {
@@ -21,6 +29,11 @@
   // Inline-block uses only the space the content needs, so the border lines up with the list items
   display: inline-block;
   padding-top: 2rem;
+
+  @include respond(tab-port) {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .footer__list {
@@ -60,4 +73,9 @@
   float: right;
   padding-top: 2rem;
   width: 80%;
+
+  @include respond(tab-port) {
+    float: none;
+    width: 100%;
+  }
 }
