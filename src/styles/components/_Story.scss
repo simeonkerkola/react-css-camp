@@ -49,7 +49,9 @@
   width: 15rem;
 
   @include respond(phone) {
-    transform: translateX(-3rem) skewX(0);
+    height: 12rem;
+    transform: translateX(-2rem) skewX(0);
+    width: 12rem;
   }
 }
 
