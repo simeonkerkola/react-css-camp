@@ -9,6 +9,7 @@ const Footer = () => (
           srcSet="/images/logo-green-small-1x.png 1x, /images/logo-green-small-2x.png 2x"
           media="(max-width: 37.5em)"
         />
+
         {/* Let the browser to decide which image to use according to screen resolution */}
         <img
           srcSet="/images/logo-green-1x.png 1x, /images/logo-green-2x.png 2x"
