@@ -16,17 +16,19 @@ class LandingPage extends Component {
         <Navigation />
         <LandingHeader />
         <main>
-          <section className="section-about">
+          <section className="section-about" id="section-about">
             <LandingAbout />
           </section>
-          <section className="section-features">
+          <section className="section-features" id="section-features">
             <LandingFeatures />
           </section>
-          <LandingTours />
-          <section className="section-stories">
+          <section className="section-tours" id="section-tours">
+            <LandingTours />
+          </section>
+          <section className="section-stories" id="section-stories">
             <LandingStories />
           </section>
-          <div className="section-booking">
+          <div className="section-booking" id="section-booking">
             <div className="row">
               <Booking />
             </div>

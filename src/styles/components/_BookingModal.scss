@@ -9,6 +9,9 @@
   visibility: hidden;
   width: 100%;
   z-index: 10000; // On top of everything
+
+  @include respond(tab-port) {
+  }
 }
 
 .modal--show {
@@ -41,11 +44,11 @@
 
   @include respond(tab-port) {
     text-align: center;
-    width: 90%;
   }
 
   @include respond(phone) {
-    font-size: 95%;
+    height: 85%;
+    width: 90%;
   }
 }
 
@@ -64,7 +67,8 @@
   vertical-align: middle;
   width: 66.666667%;
 
-  @include respond(tab-port) {
+  @include respond(phone) {
+    padding: 2rem;
   }
 }
 

@@ -10,27 +10,27 @@ const Navigation = () => (
     <nav className="navigation__nav">
       <ul className="navigation__list">
         <li className="navigation__item">
-          <a href="#0" className="navigation__link">
+          <a href="#section-about" className="navigation__link">
             <span>01</span>About Css Camp
           </a>
         </li>
         <li className="navigation__item">
-          <a href="#0" className="navigation__link">
+          <a href="#section-features" className="navigation__link">
             <span>02</span> Your Benefits
           </a>
         </li>
         <li className="navigation__item">
-          <a href="#0" className="navigation__link">
+          <a href="#section-tours" className="navigation__link">
             <span>03</span> Popular Tours
           </a>
         </li>
         <li className="navigation__item">
-          <a href="#0" className="navigation__link">
+          <a href="#section-stories" className="navigation__link">
             <span>04</span> Stories
           </a>
         </li>
         <li className="navigation__item">
-          <a href="#0" className="navigation__link">
+          <a href="#section-booking" className="navigation__link">
             <span>05</span> Book Now
           </a>
         </li>

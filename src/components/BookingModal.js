@@ -27,9 +27,9 @@ const BookingModal = () => {
             nam deserunt itaque, at sint id magni atque quod numquam totam, repudiandae ad? Fugit
             alias quod nihil, inventore sunt!
           </p>
-          <a href="#0" className="btn btn--green">
+          <button onClick={closeBooking} className="btn btn--green">
             Book now
-          </a>
+          </button>
         </div>
       </div>
     </div>
