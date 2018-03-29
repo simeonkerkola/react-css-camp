@@ -15,6 +15,7 @@ const Footer = () => (
           srcSet="/images/logo-green-1x.png 1x, /images/logo-green-2x.png 2x"
           className="footer__logo"
           alt="logo"
+          src="/images/logo-green-2x.png"
         />
       </picture>
     </div>

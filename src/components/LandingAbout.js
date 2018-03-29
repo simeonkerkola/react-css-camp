@@ -30,20 +30,27 @@ const About = () => (
       </div>
       <div className="col-1-of-2">
         <div className="composition">
+          {/* srcSet: Inform the browser about the image width */}
+          {/* sizes: Size on a screen 170px/900px = 20%, default size 300px */}
+          {/* src: Normal src tag for older browsers */}
           <img
-            src="/images/nat-1.jpg"
+            srcSet="/images/nat-1.jpg 300w, /images/nat-1.jpg 1000w"
+            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
             alt="Nature 1"
             className="composition__photo composition__photo--p1"
+            src="/images/nat-1.jpg"
           />
           <img
-            src="/images/nat-2.jpg"
+            srcSet="/images/nat-2.jpg 300w, /images/nat-2.jpg 1000w"
             alt="Nature 2"
             className="composition__photo composition__photo--p2"
+            src="/images/nat-2.jpg"
           />
           <img
-            src="/images/nat-3.jpg"
+            srcSet="/images/nat-3.jpg 300w, /images/nat-3.jpg 1000w"
             alt="Nature 3"
             className="composition__photo composition__photo--p3"
+            src="/images/nat-3.jpg"
           />
         </div>
       </div>
