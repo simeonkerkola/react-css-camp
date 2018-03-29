@@ -4,17 +4,33 @@
 
 .u-margin-bottom-xs {
   margin-bottom: $spacing-xs !important;
+
+  @include respond(tab-port) {
+    margin-bottom: $spacing-xs * .66 !important;
+  }
 }
 
 .u-margin-bottom-s {
   margin-bottom: $spacing-s !important;
+
+  @include respond(tab-port) {
+    margin-bottom: $spacing-s * .66 !important;
+  }
 }
 
 .u-margin-bottom-m {
   margin-bottom: $spacing-m !important;
+
+  @include respond(tab-port) {
+    margin-bottom: $spacing-m * .66 !important;
+  }
 }
 
 .u-content-container {
   margin: 0 auto;
   padding: 0 $spacing-s !important;
+
+  @include respond(tab-port) {
+    padding: 0 $spacing-s * .75 !important;
+  }
 }
