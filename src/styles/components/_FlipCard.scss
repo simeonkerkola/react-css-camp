@@ -85,17 +85,40 @@
     $light-orange,
     $dark-orange
   ),
-    url('/images/nat-5.jpg');
+    url('/images/nat-5-small.jpg');
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+      to right bottom,
+      $light-orange,
+      $dark-orange
+    ),
+      url('/images/nat-5.jpg');
+  }
 }
 
 .card__picture--green {
   background-image: linear-gradient(to right bottom, $light-green, $dark-green),
-    url('/images/nat-6.jpg');
+    url('/images/nat-6-small.jpg');
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+      to right bottom,
+      $light-green,
+      $dark-green
+    ),
+      url('/images/nat-6.jpg');
+  }
 }
 
 .card__picture--blue {
   background-image: linear-gradient(to right bottom, $light-blue, $dark-blue),
-    url('/images/nat-7.jpg');
+    url('/images/nat-7-small.jpg');
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(to right bottom, $light-blue, $dark-blue),
+      url('/images/nat-7.jpg');
+  }
 }
 
 .card__heading-background--orange {
@@ -170,7 +193,6 @@
   background-image: linear-gradient(to right bottom, $light-blue, $dark-blue);
 }
 
-// MEDIA QUERY ////////////////////////////////////////////////////
 // MEDIA QUERY ////////////////////////////////////////////////////
 
 @include respond(tab-port) {

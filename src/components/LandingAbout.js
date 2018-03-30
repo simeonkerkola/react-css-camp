@@ -35,19 +35,21 @@ const About = () => (
           {/* src: Normal src tag for older browsers */}
           <img
             srcSet="/images/nat-1.jpg 300w, /images/nat-1.jpg 1000w"
-            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
             alt="Nature 1"
             className="composition__photo composition__photo--p1"
             src="/images/nat-1.jpg"
           />
           <img
             srcSet="/images/nat-2.jpg 300w, /images/nat-2.jpg 1000w"
+            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
             alt="Nature 2"
             className="composition__photo composition__photo--p2"
             src="/images/nat-2.jpg"
           />
           <img
             srcSet="/images/nat-3.jpg 300w, /images/nat-3.jpg 1000w"
+            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
             alt="Nature 3"
             className="composition__photo composition__photo--p3"
             src="/images/nat-3.jpg"
