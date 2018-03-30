@@ -10,7 +10,9 @@
   width: 100%;
   z-index: 10000; // On top of everything
 
-  @include respond(tab-port) {
+  @supports (backdrop-filter: blur(10px)) {
+    backdrop-filter: blur(10px);
+    background-color: rgba(black, .3);
   }
 }
 
@@ -48,7 +50,7 @@
 
   @include respond(phone) {
     height: 85%;
-    width: 90%;
+    width: 85%;
   }
 }
 
@@ -66,10 +68,6 @@
   padding: 3rem;
   vertical-align: middle;
   width: 66.666667%;
-
-  @include respond(phone) {
-    padding: 2rem;
-  }
 }
 
 .btn-close {
@@ -106,6 +104,8 @@
   margin-bottom: 4rem;
 
   @include respond(tab-port) {
-    column-count: 1;
+    column-count: initial;
+    max-height: calc(100% - 25rem);
+    overflow-y: auto;
   }
 }
