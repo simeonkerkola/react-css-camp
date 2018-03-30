@@ -87,7 +87,8 @@
   ),
     url('/images/nat-5-small.jpg');
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    (min-width: 125em) {
     background-image: linear-gradient(
       to right bottom,
       $light-orange,
@@ -101,7 +102,8 @@
   background-image: linear-gradient(to right bottom, $light-green, $dark-green),
     url('/images/nat-6-small.jpg');
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    (min-width: 125em) {
     background-image: linear-gradient(
       to right bottom,
       $light-green,
@@ -115,7 +117,8 @@
   background-image: linear-gradient(to right bottom, $light-blue, $dark-blue),
     url('/images/nat-7-small.jpg');
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    (min-width: 125em) {
     background-image: linear-gradient(to right bottom, $light-blue, $dark-blue),
       url('/images/nat-7.jpg');
   }
@@ -193,9 +196,11 @@
   background-image: linear-gradient(to right bottom, $light-blue, $dark-blue);
 }
 
-// MEDIA QUERY ////////////////////////////////////////////////////
+// MEDIA QUERY ////////////////////////////
 
-@include respond(tab-port) {
+// @include respond(tab-port)
+// And when we cannot hover
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
   // Functionality
   .card {
     backface-visibility: hidden;

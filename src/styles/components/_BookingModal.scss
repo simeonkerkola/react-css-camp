@@ -70,26 +70,6 @@
   width: 66.666667%;
 }
 
-.btn-close {
-  background-color: transparent;
-  border: none;
-  color: $dark-grey;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 3rem;
-  outline: none;
-  padding: 0 1rem;
-  position: absolute;
-  right: 2.5rem;
-  text-decoration: none;
-  top: 2.5rem;
-  transition: all .2s;
-
-  &:hover {
-    color: $dark-green;
-  }
-}
-
 .modal__img {
   backface-visibility: hidden;
   display: block;

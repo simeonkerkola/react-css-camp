@@ -32,3 +32,8 @@ html {
     font-size: 75%;
   }
 }
+
+::selection {
+  background-color: $medium-green;
+  color: white;
+}

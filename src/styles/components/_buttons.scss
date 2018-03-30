@@ -71,6 +71,27 @@
   }
 }
 
+.btn-close {
+  background-color: transparent;
+  border: none;
+  color: $dark-grey;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 3rem;
+  outline: none;
+  padding: 0 1rem;
+  position: absolute;
+  right: 2.5rem;
+  text-decoration: none;
+  top: 2.5rem;
+  transition: all .2s;
+  z-index: 100;
+
+  &:hover {
+    color: $dark-green;
+  }
+}
+
 .btn-text {
   padding: 1rem $spacing-xs;
 
