@@ -36,22 +36,28 @@
 
 .story__shape {
   background-color: $light-green;
-  clip-path: circle(50% at 50% 50%);
+  border-radius: 50%;
   float: left; // Make the rest of the content float around the image
-  height: 15rem;
+  height: 12rem;
+  overflow: hidden; // Because the image overlows this container
   position: relative;
-
-  // 50%(radius, 100% diameter) size at the middle(x, y)
-  shape-outside: circle(50% at 50% 50%);
 
   // Best way to move aroud a floated element is not to mess with margins
   transform: translateX(-3rem) skewX(12deg);
-  width: 15rem;
+  width: 12rem;
+
+  @supports (clip-path: polygon(0 0)) {
+    border-radius: 0;
+    clip-path: circle(50% at 50% 50%);
+    height: 15rem;
+
+    // 50%(radius, 100% diameter) size at the middle(x, y)
+    shape-outside: circle(50% at 50% 50%);
+    width: 15rem;
+  }
 
   @include respond(phone) {
-    height: 12rem;
     transform: translateX(-2rem) skewX(0);
-    width: 12rem;
   }
 }
 

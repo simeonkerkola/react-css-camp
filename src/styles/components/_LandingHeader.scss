@@ -7,15 +7,19 @@
     url('/images/hero-small.jpg');
   background-position: top; // As we resize, the top part of the image sticks at the position
   background-size: cover; // Try to fit whatever the viewport size is
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 75vh,
-    0% 100%
-  ); // Clockwise from top-left, x y
-
-  height: 95vh;
+  height: 85vh;
   position: relative;
+
+  @supports (clip-path: polygon(0 0)) {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 75vh,
+      0% 100%
+    ); // Clockwise from top-left, x y
+
+    height: 95vh;
+  }
 
   // Retina screen resolutiom & anything higher, exluding small 600px screens
   // OR screen size over 2000px
